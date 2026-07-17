@@ -1,0 +1,36 @@
+### 🃏 CardDeckAPI
+
+### 📚 Obtener todas las cartas
+GET http://localhost:3000/cartas
+
+
+### 🔎 Obtener una carta por ID
+GET http://localhost:3000/cartas/1
+
+
+### 🆕 Crear una carta nueva
+POST http://localhost:3000/cartas
+Content-Type: application/json
+
+{
+  "id" : 7,
+  "nombre": "Espada de Luz Astral",
+  "tipo": "Arma",
+  "poder": 2800,
+  "edicion": "Legendaria"
+}
+
+### ✏️ Actualizar Dragón Blanco
+PUT http://localhost:3000/cartas/1
+Content-Type: application/json
+
+{
+  "nombre": "Dragón Blanco",
+  "tipo": "Dragón",
+  "poder": 4500,
+  "edicion": "Legendaria"
+}
+
+### 🗑️ Eliminar carta por ID
+### Borra una carta existente del CardDeckAPI
+DELETE http://localhost:3000/cartas/5
